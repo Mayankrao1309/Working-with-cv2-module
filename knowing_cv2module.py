@@ -19,6 +19,7 @@ while True:
     # Pressing 'q' on the keyboard will exit the loop
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+    # Pressing 's' on the keyboard will capture a new image
     elif cv2.waitKey(1) & 0xFF == ord('s'):
         im=f"captured_image_{img_counter}.png"
         path=os.path.join("C:/Users/mayan/Desktop",im)
